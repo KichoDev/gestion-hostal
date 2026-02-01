@@ -14,7 +14,7 @@
                 <p><strong>Nombre:</strong> {{ $client->name }}</p>
                 <p><strong>Email:</strong> {{ $client->email }}</p>
                 <p><strong>Teléfono:</strong> {{ $client->phone ?? '—' }}</p>
-
+                <p><strong>Dirección:</strong> {{ $client->address ?? '—' }}</p>
                 <div class="mt-4">
                     <a href="{{ route('clients.edit', $client) }}"
                        class="text-blue-600 hover:underline">

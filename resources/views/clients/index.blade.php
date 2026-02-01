@@ -15,6 +15,7 @@
                                 <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Nombre</th>
                                 <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Email</th>
                                 <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Teléfono</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase">Dirección</th>
                                 <th class="px-6 py-3 text-right text-xs font-medium text-white uppercase">Acciones</th>
                             </tr>
                         </thead>
@@ -30,6 +31,9 @@
                                     </td>
                                     <td class="px-6 py-4 text-sm text-white">
                                         {{ $client->phone }}
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-white">
+                                        {{ $client->address }}
                                     </td>
                                     <td class="px-6 py-4 text-right text-sm font-medium space-x-2">
                                         <a href="{{ route('clients.show', $client) }}"

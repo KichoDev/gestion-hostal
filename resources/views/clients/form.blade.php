@@ -38,3 +38,16 @@
     />
     <x-input-error :messages="$errors->get('phone')" />
 </div>
+
+<!-- Dirección -->
+<div class="mb-4">
+    <x-input-label for="address" value="Dirección" />
+    <x-text-input
+        id="address"
+        name="address"
+        type="text"
+        class="mt-1 block w-full"
+        value="{{ old('address', $client->address ?? '') }}"
+    />
+    <x-input-error :messages="$errors->get('address')" />
+</div>
